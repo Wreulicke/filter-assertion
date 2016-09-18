@@ -43,7 +43,6 @@ assert = function(schema) {
       return result;
     }, < InternalActualInfo[] > []);
     actualInfos.forEach((info) => {
-      console.log(info);
       assertion(info.predicateInfo.predicate(info.value, info.key, info.predicateInfo));
     });
   };
